@@ -1,5 +1,5 @@
 Рейтинг фильмов
-[Ссылка на Github Pages](https://Frida-Alexandra.github.io/bib-3.1/)
+[Ссылка на Github Pages](https://[Frida-Alexandra.github.io/bib-3.1-edit/)
 ===
 
 Необходимо реализовать компонент отображающий рейтинг фильма в виде звезд:
