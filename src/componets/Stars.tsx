@@ -1,19 +1,18 @@
-import Star from './Star';
+import Star from "./Star"
 
-const Stars = ({ count }) => {
-
-	if (typeof count !== 'number' || count > 5 || count < 0) {
-		return null;
+function Stars(props): JSX.Element {
+	const { count } = props
+	let contStars = [], star = Star()
+	if ([1, 2, 3, 4, 5].includes(count)) {
+		for (let i = 1; i <= count; i++) {
+			contStars.push(star);
+		}
+		return (
+			<>
+				<div> {contStars} </div>
+			</>
+		)
 	}
-
-	return (
-		<ul className="card-body-stars">
-         {[...Array(count)].map((_, idx) => <li key={idx}><Star /></li>)}
-      </ul>
-	)
 }
 
-export default Stars;
-interface Stars {
-  count: number
-}
+export default Stars
